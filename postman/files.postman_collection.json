@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "af197d5e-a554-44f0-b454-d06ca1b8424d",
+		"name": "files",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "image/:fileName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/image/c3e8450a-7b5d-4a4e-b92d-0c1a3737def3.png",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"image",
+						"c3e8450a-7b5d-4a4e-b92d-0c1a3737def3.png"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/H:/87592.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
